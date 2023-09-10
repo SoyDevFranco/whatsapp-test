@@ -1,0 +1,232 @@
+/* Estilos globales */
+body,
+p,
+h3 {
+     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 100%;
+     vertical-align: initial;
+     outline: none;
+     padding: 0;
+     margin: 0;
+     border: 0;
+}
+
+body {
+     width: 100%;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     overflow: hidden;
+}
+
+main {
+     width: 100%;
+     height: 100vh;
+     padding: 0;
+     margin: 0;
+     overflow: hidden;
+     background: #0c1317;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.app-container {
+     width: 80%;
+     height: 97%;
+     background: red;
+     display: flex;
+}
+
+/* Estilos para el contenedor de chat (chat-container) */
+.chat-container {
+     width: 35%;
+     height: 100%;
+     background: #0c1317;
+     display: flex;
+     flex-direction: column;
+}
+
+/* Estilos para la parte superior (header) */
+header {
+     width: 100%;
+     height: 60px;
+     background: #202c33;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 20px;
+}
+
+/* Estilos para la parte izquierda del encabezado (header-left) */
+.header-left {
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+}
+
+.header-left img {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     margin-right: 10px;
+}
+
+.header-title {
+     color: white;
+     font-size: 1.2em;
+}
+
+/* Estilos para la parte derecha del encabezado (header-right) */
+.header-right {
+     display: flex;
+     margin-right: 20px;
+}
+
+.header-right img {
+     width: 25px;
+     height: 25px;
+     margin-right: 27px;
+     cursor: pointer;
+}
+
+/* Estilos para la lista de chats (chat-list) */
+.chat-list {
+     flex: 1;
+     overflow-y: auto;
+     padding: 10px;
+     background-color: #111b21;
+     position: relative;
+}
+
+/* Estilos para un chat individual (chat) */
+.chat {
+     display: flex;
+     align-items: center;
+     margin-bottom: 15px;
+     cursor: pointer;
+}
+
+.chat img {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     margin-right: 10px;
+}
+
+.chat-info {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     border-top: 1px solid rgba(134, 150, 160, 0.15);
+}
+
+.chat-title {
+     margin-top: 10px;
+     color: white;
+     font-size: 1em;
+}
+
+.chat-message {
+     color: #b0aeae;
+     font-size: 0.9em;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     max-width: 400px;
+}
+
+.chat-timestamp {
+     color: #808080;
+     font-size: 0.8em;
+     margin-left: 10px;
+}
+
+/* Estilos para el contenedor de descarga (download-container) */
+aside {
+     width: 65%;
+     background: #222e35;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-left: 1px solid rgba(169, 185, 195, 0.15);
+     border-bottom: 5px solid #008069;
+}
+
+/* Estilos para el contenido de descarga (download-content) */
+.download-content {
+     width: 80%;
+     text-align: center;
+}
+
+.download-content img {
+     width: 42%;
+     height: 42%;
+}
+
+.download-title {
+     color: white;
+     font-size: 2.2em;
+     font-weight: lighter;
+     margin: 20px 0;
+}
+
+.download-text {
+     color: #8696a0;
+     font-size: 0.9em;
+     margin-bottom: 20px;
+
+}
+
+.download-button {
+     width: 30%;
+     background: #06cf9c;
+     border: none;
+     border-radius: 50px;
+     color: #000000;
+     font-size: 1.1em;
+     padding: 7px;
+     cursor: pointer;
+}
+
+/* Estilos para el elemento de descarga de WhatsApp */
+.whatsapp-download {
+     border-top: 1px solid rgba(134, 150, 160, 0.15);
+     width: 90%;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     padding: 15px;
+     position: absolute;
+     bottom: 0;
+}
+
+.whatsapp-download-left {
+     width: 10%;
+     display: flex;
+     align-items: center;
+}
+
+.whatsapp-download-left img {
+     width: 80%;
+     max-width: 34px;
+     border-radius: 4px;
+}
+
+.whatsapp-download-center {
+     width: 85%;
+     display: flex;
+     align-items: center;
+}
+
+.container-chat-mid-app {
+     flex-grow: 1;
+}
+
+.container-chat-mid-app p {
+     color: #00a884;
+     font-size: 18px;
+     cursor: pointer;
+     text-align: left;
+}
